@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F0F4F8;
+  color: #2C3E50;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #2C3E50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease, pulse 2s infinite alternate;
+  border-radius: 50%; /* Adiciona esta linha para tornar o logo redondo */
+  object-fit: cover;
+  height: 150px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+
+
+section {
+  padding: 40px 20px;
+}
+
+h2,
+h3 {
+  color: #2C3E50;
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: -0.02em;
+}
+
+.highlight,
+.fotos-equipe {
+  background-color: #fff;
+  border-left: 5px solid #3498DB;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+.fotos-equipe {
+  text-align: center;
+}
+
+.equipe {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.membro img {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 220px;
+}
+
+.membro img:hover {
+  transform: translateY(-5px);
+}
+
+.membro p {
+  margin-top: 15px;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.logo-escola {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.logo-escola img {
+  width: 200px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+button,
+a.btn {
+  background-color: #3498DB;
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out, box-shadow 0 0 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+}
+
+button:hover,
+a.btn:hover {
+  background-color: #2980B9;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  border-color: transparent;
+}
+
+button:active,
+a.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 0;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .equipe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membro img {
+    width: 90%;
+    max-width: 300px;
+  }
+  .membro img {
+    width: 90%;
+    max-width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  height: auto;
+}
+
+  button,
+  a.btn {
+    font-size: 1em;
+    padding: 12px 25px;
+  }
+
+  h2,
+  h3{
+    font-size: 1.5em;
+  }
+
+  .highlight,
+  .fotos-equipe{
+    padding: 20px;
+  }
+}
+
+/* Estilos para telas menores que 480px */
+@media (max-width: 480px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  button,
+  a.btn {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+
+  h2,
+  h3{
+    font-size: 1.2em;
+  }
+}
