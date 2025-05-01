@@ -193,7 +193,7 @@ a.btn:active {
   }
 
   .logo {
-    width: 100px;
+    width: 1o0px;
   }
 
   section {
@@ -210,4 +210,34 @@ a.btn:active {
   h3{
     font-size: 1.2em;
   }
-}
+  .btn-whatsapp {
+    background-color: #25D366;
+    color: #fff;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, box-shadow 0 0 15px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  }
+
